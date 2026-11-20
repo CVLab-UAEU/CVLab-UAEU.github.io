@@ -32,7 +32,7 @@ window.CVLAB = {
     { group: "faculty", name: "Muna Alebri", photo: "assets/img/people/muna-alebri.webp", role: "Assistant Professor", scholar: "https://scholar.google.com/citations?user=nSganTEAAAAJ" },
     { group: "faculty", name: "Jamil Ahmad", photo: "assets/img/people/jamil-ahmad.webp", role: "Assistant Professor", scholar: "https://scholar.google.com/citations?user=7dw-9YgAAAAJ" },
     { group: "faculty", name: "Mustaqeem Khan", photo: "assets/img/people/mustaqeem-khan.webp", role: "Assistant Professor", scholar: "https://scholar.google.com/citations?user=uEZhRWAAAAAJ" },
-    { group: "faculty", name: "Longyu Zhou", role: "Assistant Professor", scholar: "https://scholar.google.com/citations?user=Mj6-DqQAAAAJ" },
+    { group: "faculty", name: "Longyu Zhou", photo: "assets/img/people/longyu-zhou.webp", role: "Assistant Professor", scholar: "https://scholar.google.com/citations?user=Mj6-DqQAAAAJ" },
 
     { group: "postdoc", name: "Kun Li", photo: "assets/img/people/kun-li.webp", role: "Postdoctoral Fellow" },
     { group: "postdoc", name: "Jin Jiang", photo: "assets/img/people/jin-jiang.webp", role: "Postdoctoral Fellow" },
