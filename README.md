@@ -1,5 +1,7 @@
 # CVLab @ UAEU — Lab Website
 
+**🌐 Visit the lab website: [cvlab-uaeu.github.io](https://cvlab-uaeu.github.io/)**
+
 Website for the **Computer Vision Lab (CVLab)**, United Arab Emirates University, directed by Dr. Shengcai Liao: one home page with tabs, plus a page for each news article.
 
 Plain HTML / CSS / JS. No build step, no dependencies, ready for GitHub Pages.
@@ -73,17 +75,12 @@ Then open http://localhost:8000.
 
 If an edit doesn't show up, the browser is using a cached copy: hard-refresh with **Cmd+Shift+R** (Windows: Ctrl+Shift+R). After changing `style.css`, `data.js` or `main.js`, also bump the `?v=` number on those links at the top and bottom of `index.html` and `news.html`, so visitors of the live site get the new version.
 
-## Deploy to GitHub Pages
+## Publishing
 
-The published site is public: anyone with the address can open it, and search engines index it. On a free GitHub account the repository must also be public for Pages to work, which means every file in it and its full commit history can be read by anyone. Only push content that is cleared for public release.
+This repository is published with GitHub Pages at **https://cvlab-uaeu.github.io/**, from the `main` branch (root folder). Every push to `main` updates the live site within a minute or two:
 
-1. Create a repository. For an organization site, the name must be exactly `<org>.github.io` (e.g. organization `uaeu-cvlab` → `uaeu-cvlab.github.io`); any other name gives a project site.
-2. Push these files to `main` (`.gitignore` already leaves out `.claude/` and `.DS_Store`):
-   ```bash
-   git init && git add . && git commit -m "CVLab website"
-   git branch -M main
-   git remote add origin https://github.com/<org-or-user>/<repo>.git
-   git push -u origin main
-   ```
-3. On GitHub: **Settings → Pages → Deploy from a branch → `main` / `(root)`**.
-4. The site is live at `https://<org-or-user>.github.io/` (or `/<repo>/`) after a minute or two.
+```bash
+git add -A && git commit -m "Update site" && git push
+```
+
+The site and this repository are public: anyone can open the site, search engines index it, and every file here, including its full history, can be read by anyone. Only push content that is cleared for public release. `.gitignore` already leaves out local-only files (`.claude/`, `.DS_Store`).
