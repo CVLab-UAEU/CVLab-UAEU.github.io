@@ -191,6 +191,10 @@ window.CVLAB = {
    *   listed    false → card only, not in the All Publications list
    *             (e.g. papers before 2025, which are on Dr. Liao's own list)          */
   publications: [
+    { year: 2026, authors: "Cong Zhang, Wenxiao Nie, Shengcai Liao, Bin Fan",
+      title: "Prior Guided Progressive Fusion for Visible–Infrared Object Detection",
+      venue: "Neurocomputing", short: "Neurocomputing", extra: "Vol. 713, Article 135692",
+      links: { paper: "https://doi.org/10.1016/j.neucom.2026.135692" } },
     { year: 2026, authors: "Yani Zhang, Dongming Wu, Wencheng Han, Xingping Dong, Shengcai Liao, Bo Du",
       title: "Referring Multi-Object Tracking with Diverse Dynamic Expressions",
       venue: "IEEE Transactions on Pattern Analysis and Machine Intelligence", short: "TPAMI", extra: "Early Access",

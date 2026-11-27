@@ -315,7 +315,7 @@
           if (L.code) links.push('<a href="' + esc(L.code) + '" target="_blank" rel="noopener">Code</a>');
           if (L.project) links.push('<a href="' + esc(L.project) + '" target="_blank" rel="noopener">Project</a>');
           return "<li>" + authorsHTML(p.authors) + ', “<span class="title">' + esc(p.title) + '</span>,” ' +
-            '<span class="venue">' + (p.venue ? "in <em>" + esc(p.venue) + "</em> (<b>" + esc(p.short) + "</b>)" : "<b>" + esc(p.short) + "</b>") + (p.extra ? ", " + esc(p.extra) : "") + ", " + p.year + ".</span>" +
+            '<span class="venue">' + (p.venue ? "in <em>" + esc(p.venue) + "</em>" + (p.short && p.short !== p.venue ? " (<b>" + esc(p.short) + "</b>)" : "") : "<b>" + esc(p.short) + "</b>") + (p.extra ? ", " + esc(p.extra) : "") + ", " + p.year + ".</span>" +
             (links.length ? '<span class="pub-links">' + links.join("") + "</span>" : "") + "</li>";
         }).join("") + "</ol>";
     }).join("");
